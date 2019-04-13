@@ -15,9 +15,13 @@ $.ajax({
 }).then(function (results) {
     console.log(results);
     for (let i = 0; i < limit; i++) {
+        var newDiv = $("<div>");
+        $(newDiv).addClass("card");
         var heading = $("<h4>").text(results.response.docs[i].snippet);
+        $(heading).addClass("card-titile");
         var date = $("<p>").text(results.response.docs[i].pub_date);
         var url = $("<a>").attr("href", results.response.docs[i].web_url).text(results.response.docs[i].web_url);
-        $("#results").append(heading, date, url);
+        $(newDiv).append(heading, date, url);
+        $("#results").append(newDiv);
     }
 });
