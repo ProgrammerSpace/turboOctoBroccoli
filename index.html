@@ -17,11 +17,6 @@
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
@@ -31,7 +26,43 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+
+    <div class="container-fluid">
+        <h1>New York Times Search</h1>
+    </div>
+
+
+    <div id="main-container">
+        <form>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Search Term:</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Number of Records to Retrieve:</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Start Year(Optional)</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">End Year(Optional)</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                </div>
+                <input id="findtext"  type="submit" value="Search">
+                
+                
+            </form>
+
+    </div>
+
+
+
+
+
 </body>
 
 </html>
-
