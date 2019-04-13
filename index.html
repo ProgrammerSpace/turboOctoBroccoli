@@ -12,6 +12,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
 
     <title>Hello, world!</title>
 </head>
@@ -32,12 +34,12 @@
         crossorigin="anonymous"></script>
 
 
-    <div class="container-fluid">
+    <div class="container">
         <h1>New York Times Search</h1>
     </div>
 
 
-    <div id="main-container">
+    <div class="container">
         <form>
             <div class="form-group">
                 <label for="formGroupExampleInput">Search Term:</label>
@@ -56,7 +58,8 @@
                     <label for="formGroupExampleInput2">End Year(Optional)</label>
                     <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Another input">
                 </div>
-                <button class="button" id="findtext" type="button" value="Search">Submit</button>
+                <button class="button" id="findtext" type="button" value="Search">Search</button>
+                <button class="clear" id="findtext" type="button" value="Search">clear</button>
                 <div id="results"></div>
 
 

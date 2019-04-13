@@ -4,6 +4,11 @@ var start_date = "";
 var end_date = "";
 $(document).ready(function () {
 
+    $(".clear").on("click", function (event) {
+        event.preventDefault();
+        $("#results").empty();
+    });
+
     $(".button").on("click", function (event) {
         event.preventDefault();
         searchString = $("#formGroupExampleInput").val();
@@ -23,9 +28,10 @@ $(document).ready(function () {
             method: "GET"
         }).then(function (results) {
             console.log(results);
+            $("#results").empty();
             for (let i = 0; i < limit; i++) {
                 var newDiv = $("<div>");
-                $(newDiv).addClass("card");
+                $(newDiv).addClass("card m-2 p-3");
                 var heading = $("<h4>").text(results.response.docs[i].snippet);
                 $(heading).addClass("card-titile");
                 var date = $("<p>").text("Published Date: " + results.response.docs[i].pub_date);
